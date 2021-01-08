@@ -1,0 +1,418 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.images"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:8:5-66
+14-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:5-79
+15-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:25:5-68
+16-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:25:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
+18
+19    <application
+19-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:9:5-66:19
+20        android:name="io.flutter.app.FlutterApplication"
+20-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:10:9-57
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/44b1706abe044cd42dcac5be863451ed/core-1.1.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:12:9-43
+24        android:label="images"
+24-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:11:9-31
+25        android:supportsRtl="true" >
+25-->[com.facebook.android:facebook-login:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/74beda06dad7d119324ce821f0f31b51/facebook-login-8.1.0/AndroidManifest.xml:28:18-44
+26        <activity
+26-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:13:9-41:20
+27            android:name="com.example.images.MainActivity"
+27-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:14:13-41
+28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:17:13-163
+29            android:hardwareAccelerated="true"
+29-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:18:13-47
+30            android:launchMode="singleTop"
+30-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:15:13-43
+31            android:theme="@style/LaunchTheme"
+31-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:16:13-47
+32            android:windowSoftInputMode="adjustResize" >
+32-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:19:13-55
+33
+34            <!--
+35                 Specifies an Android theme to apply to this Activity as soon as
+36                 the Android process has started. This theme is visible to the user
+37                 while the Flutter UI initializes. After that, this theme continues
+38                 to determine the Window background behind the Flutter UI.
+39            -->
+40            <meta-data
+40-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:24:13-27:17
+41                android:name="io.flutter.embedding.android.NormalTheme"
+41-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:25:15-70
+42                android:resource="@style/NormalTheme" />
+42-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:26:15-52
+43            <!--
+44                 Displays an Android View that continues showing the launch screen
+45                 Drawable until Flutter paints its first frame, then this splash
+46                 screen fades out. A splash screen is useful to avoid any visual
+47                 gap between the end of Android's launch screen and the painting of
+48                 Flutter's first frame.
+49            -->
+50            <meta-data
+50-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:33:13-36:17
+51                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+51-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:34:15-79
+52                android:resource="@drawable/launch_background" />
+52-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:35:15-61
+53
+54            <intent-filter>
+54-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:37:13-40:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:38:17-68
+55-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:38:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:39:17-76
+57-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:39:27-74
+58            </intent-filter>
+59        </activity>
+60
+61        <meta-data
+61-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:42:9-43:50
+62            android:name="com.facebook.sdk.ApplicationId"
+62-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:42:20-65
+63            android:value="@string/facebook_app_id" />
+63-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:43:9-48
+64
+65        <activity
+65-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:45:5-48:44
+66            android:name="com.facebook.FacebookActivity"
+66-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:45:15-59
+67            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+67-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:46:9-109
+68            android:label="@string/app_name"
+68-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:48:9-41
+69            android:theme="@style/com_facebook_activity_theme" />
+69-->[com.facebook.android:facebook-common:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3b467f0afbe5cda10a959fa04e7070a6/facebook-common-8.1.0/AndroidManifest.xml:33:13-63
+70        <activity
+70-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:49:5-58:16
+71            android:name="com.facebook.CustomTabActivity"
+71-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:50:9-54
+72            android:exported="true" >
+72-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:51:9-32
+73            <intent-filter>
+73-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:52:9-57:25
+74                <action android:name="android.intent.action.VIEW" />
+74-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:13-65
+74-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:21-62
+75
+76                <category android:name="android.intent.category.DEFAULT" />
+76-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:13-72
+76-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:23-69
+77                <category android:name="android.intent.category.BROWSABLE" />
+77-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:13-74
+77-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:23-71
+78
+79                <data android:scheme="@string/fb_login_protocol_scheme" />
+79-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:13-71
+79-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:19-68
+80            </intent-filter>
+81            <intent-filter>
+81-->[com.facebook.android:facebook-common:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3b467f0afbe5cda10a959fa04e7070a6/facebook-common-8.1.0/AndroidManifest.xml:39:13-48:29
+82                <action android:name="android.intent.action.VIEW" />
+82-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:13-65
+82-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:21-62
+83
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:13-72
+84-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:23-69
+85                <category android:name="android.intent.category.BROWSABLE" />
+85-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:13-74
+85-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:23-71
+86
+87                <data
+87-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:13-71
+88                    android:host="cct.com.example.images"
+89                    android:scheme="fbconnect" />
+89-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:19-68
+90            </intent-filter>
+91        </activity>
+92
+93        <!--
+94             Don't delete the meta-data below.
+95             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+96        -->
+97        <meta-data
+97-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:63:9-65:33
+98            android:name="flutterEmbedding"
+98-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:64:13-44
+99            android:value="2" />
+99-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:65:13-30
+100
+101        <service
+101-->[:firebase_auth] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[:firebase_auth] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:76:13-37
+105            <meta-data
+105-->[:firebase_auth] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+106-->[:firebase_auth] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_auth] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+108            <meta-data
+108-->[:firebase_core] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+109-->[:firebase_core] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_core] /Users/samah/development/projects/flickr_search_images_mvvm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:77:13-79:85
+112                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+112-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:78:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:79:17-82
+114            <meta-data
+114-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/a1427d643374604029ba240672e36c13/play-services-measurement-api-18.0.0/AndroidManifest.xml:30:13-32:85
+115                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+115-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/a1427d643374604029ba240672e36c13/play-services-measurement-api-18.0.0/AndroidManifest.xml:31:17-139
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/a1427d643374604029ba240672e36c13/play-services-measurement-api-18.0.0/AndroidManifest.xml:32:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-installations:16.3.5] /Users/samah/.gradle/caches/transforms-2/files-2.1/2c1b778f09d17c9a8a92258ee62b2bd6/firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+118                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+118-->[com.google.firebase:firebase-installations:16.3.5] /Users/samah/.gradle/caches/transforms-2/files-2.1/2c1b778f09d17c9a8a92258ee62b2bd6/firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-installations:16.3.5] /Users/samah/.gradle/caches/transforms-2/files-2.1/2c1b778f09d17c9a8a92258ee62b2bd6/firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+120            <!--
+121                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+122                clients to use it as well, by defining this registrar in their own core/common library.
+123            -->
+124            <meta-data
+124-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+125                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+125-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+127        </service>
+128
+129        <activity
+129-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:27:9-44:20
+130            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+130-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:28:13-80
+131            android:excludeFromRecents="true"
+131-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:29:13-46
+132            android:exported="true"
+132-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:30:13-36
+133            android:launchMode="singleTask"
+133-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:31:13-44
+134            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+134-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:32:13-72
+135            <intent-filter>
+135-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:33:13-43:29
+136                <action android:name="android.intent.action.VIEW" />
+136-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:13-65
+136-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:21-62
+137
+138                <category android:name="android.intent.category.DEFAULT" />
+138-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:13-72
+138-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:23-69
+139                <category android:name="android.intent.category.BROWSABLE" />
+139-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:13-74
+139-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:23-71
+140
+141                <data
+141-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:13-71
+142                    android:host="firebase.auth"
+143                    android:path="/"
+144                    android:scheme="genericidp" />
+144-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:19-68
+145            </intent-filter>
+146        </activity>
+147        <activity
+147-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:45:9-62:20
+148            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+148-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:46:13-79
+149            android:excludeFromRecents="true"
+149-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:47:13-46
+150            android:exported="true"
+150-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:48:13-36
+151            android:launchMode="singleTask"
+151-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:49:13-44
+152            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+152-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:50:13-72
+153            <intent-filter>
+153-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:51:13-61:29
+154                <action android:name="android.intent.action.VIEW" />
+154-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:13-65
+154-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:53:21-62
+155
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:13-72
+156-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:23-69
+157                <category android:name="android.intent.category.BROWSABLE" />
+157-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:13-74
+157-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:55:23-71
+158
+159                <data
+159-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:13-71
+160                    android:host="firebase.auth"
+161                    android:path="/"
+162                    android:scheme="recaptcha" />
+162-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:56:19-68
+163            </intent-filter>
+164        </activity>
+165
+166        <service
+166-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:64:9-73:19
+167            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+167-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:65:13-101
+168            android:enabled="true"
+168-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:66:13-35
+169            android:exported="false" >
+169-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:67:13-37
+170            <intent-filter>
+170-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:68:13-72:29
+171                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+171-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:17-89
+171-->[com.google.firebase:firebase-auth:20.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/e0d351933731a33f9085e7cf8d482231/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:25-86
+172
+173                <category android:name="android.intent.category.DEFAULT" />
+173-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:13-72
+173-->/Users/samah/development/projects/flickr_search_images_mvvm/android/app/src/main/AndroidManifest.xml:54:23-69
+174            </intent-filter>
+175        </service>
+176
+177        <activity
+177-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+178            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+178-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+179            android:excludeFromRecents="true"
+179-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+180            android:exported="false"
+180-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+182        <!--
+183            Service handling Google Sign-In user revocation. For apps that do not integrate with
+184            Google Sign-In, this service will never be started.
+185        -->
+186        <service
+186-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+187            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+187-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+188            android:exported="true"
+188-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+189            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+189-->[com.google.android.gms:play-services-auth:16.0.1] /Users/samah/.gradle/caches/transforms-2/files-2.1/ff3fd4005aa29e19607f73a4437e431c/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+190
+191        <activity
+191-->[com.google.android.gms:play-services-base:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+192            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+192-->[com.google.android.gms:play-services-base:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+193            android:exported="false"
+193-->[com.google.android.gms:play-services-base:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+194            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+194-->[com.google.android.gms:play-services-base:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/12b2a981af48a4d34665a895e1a50203/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+195        <activity android:name="com.facebook.CustomTabMainActivity" />
+195-->[com.facebook.android:facebook-common:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3b467f0afbe5cda10a959fa04e7070a6/facebook-common-8.1.0/AndroidManifest.xml:34:9-71
+195-->[com.facebook.android:facebook-common:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3b467f0afbe5cda10a959fa04e7070a6/facebook-common-8.1.0/AndroidManifest.xml:34:19-68
+196
+197        <receiver
+197-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:29:9-33:20
+198            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+198-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:30:13-85
+199            android:enabled="true"
+199-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:31:13-35
+200            android:exported="false" >
+200-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:32:13-37
+201        </receiver>
+202
+203        <service
+203-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:35:9-38:40
+204            android:name="com.google.android.gms.measurement.AppMeasurementService"
+204-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:36:13-84
+205            android:enabled="true"
+205-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:37:13-35
+206            android:exported="false" />
+206-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:38:13-37
+207        <service
+207-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:39:9-43:72
+208            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+208-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:40:13-87
+209            android:enabled="true"
+209-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:41:13-35
+210            android:exported="false"
+210-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:42:13-37
+211            android:permission="android.permission.BIND_JOB_SERVICE" />
+211-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/ca08b22c284dcee426e12d80c7ff2a13/play-services-measurement-18.0.0/AndroidManifest.xml:43:13-69
+212
+213        <provider
+213-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+214            android:name="com.google.firebase.provider.FirebaseInitProvider"
+214-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+215            android:authorities="com.example.images.firebaseinitprovider"
+215-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+216            android:directBootAware="true"
+216-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+217            android:exported="false"
+217-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+218            android:initOrder="100" />
+218-->[com.google.firebase:firebase-common:19.5.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/bf83cdbf2e99af622b02b88e92aed1f9/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+219
+220        <meta-data
+220-->[com.google.android.gms:play-services-basement:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/66def6d080697bfe0d3d6cefc69a0c57/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+221            android:name="com.google.android.gms.version"
+221-->[com.google.android.gms:play-services-basement:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/66def6d080697bfe0d3d6cefc69a0c57/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+222            android:value="@integer/google_play_services_version" />
+222-->[com.google.android.gms:play-services-basement:17.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/66def6d080697bfe0d3d6cefc69a0c57/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+223        <!--
+224         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+225         with the application context. This config is merged in with the host app's manifest,
+226         but there can only be one provider with the same authority activated at any given
+227         point; so if the end user has two or more different apps that use Facebook SDK, only the
+228         first one will be able to use the provider. To work around this problem, we use the
+229         following placeholder in the authority to identify each host application as if it was
+230         a completely different provider.
+231        -->
+232        <provider
+232-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:39:9-42:40
+233            android:name="com.facebook.internal.FacebookInitProvider"
+233-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:40:13-70
+234            android:authorities="com.example.images.FacebookInitProvider"
+234-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:41:13-72
+235            android:exported="false" />
+235-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:42:13-37
+236
+237        <receiver
+237-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:44:9-50:20
+238            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+238-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:45:13-86
+239            android:exported="false" >
+239-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:46:13-37
+240            <intent-filter>
+240-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:47:13-49:29
+241                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+241-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:48:17-95
+241-->[com.facebook.android:facebook-core:8.1.0] /Users/samah/.gradle/caches/transforms-2/files-2.1/3dc0540482e305cbc116a7f53d72e69b/jetified-facebook-core-8.1.0/AndroidManifest.xml:48:25-92
+242            </intent-filter>
+243        </receiver>
+244    </application>
+245
+246</manifest>
