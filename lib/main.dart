@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
         return MaterialPageRoute(builder: (ctx) => builder(ctx));
       },
       routes: {
-        ImageDetailsScreen.routeName: (ctx) => ImageDetailsScreen(),
+        // ImageDetailsScreen.routeName: (ctx) => ImageDetailsScreen(),
         LoginScreen.routeName: (ctx) => LoginScreen(),
         // SearchResultScreen.routeName: (ctx) => SearchResultScreen(),
       },

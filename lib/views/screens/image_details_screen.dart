@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-import '../../view_models/images_list_view_model.dart';
+import '../../view_models/image_view_model.dart';
 import '../widgets/my_app_bar.dart';
 
 class ImageDetailsScreen extends StatelessWidget {
-  static const routeName = '/image-details';
+
+  ImageViewModel image;
+  ImageDetailsScreen({@required this.image});
 
   @override
   Widget build(BuildContext context) {
-    final imageId =
-        ModalRoute.of(context).settings.arguments as String; // is the id!
-    final loadedImage = Provider.of<ImagesListViewModel>(
-      context,
-      listen: false,
-    ).getImageById(imageId);
     return Scaffold(
-      appBar: MyAppBar(loadedImage.title),
+      appBar: MyAppBar(this.image.title),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -25,10 +20,14 @@ class ImageDetailsScreen extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 2,
               width: double.infinity,
               child: CachedNetworkImage(
-                imageUrl: loadedImage.url,
+                imageUrl: this.image.url,
                 fit: BoxFit.cover,
-                placeholder: (context, url) => Image.asset('assets/loading.gif'),
-                errorWidget: (context, url, error) => Icon(Icons.error, color: Colors.red[600],),
+                placeholder: (context, url) =>
+                    Image.asset('assets/loading.gif'),
+                errorWidget: (context, url, error) => Icon(
+                  Icons.error,
+                  color: Colors.red[600],
+                ),
               ),
               // FadeInImage(
               //   placeholder: AssetImage('assets/loading.gif'),
@@ -41,11 +40,11 @@ class ImageDetailsScreen extends StatelessWidget {
               child: Column(children: <Widget>[
                 ListTile(
                   title: Text(
-                    loadedImage.title,
+                    this.image.title,
                     style: Theme.of(context).textTheme.headline1,
                   ),
                   subtitle: Text(
-                    loadedImage.description,
+                    this.image.description,
                     style: Theme.of(context).textTheme.headline2,
                   ),
                   leading: Icon(Icons.view_headline),
@@ -53,21 +52,21 @@ class ImageDetailsScreen extends StatelessWidget {
                 Divider(),
                 ListTile(
                   title: Text(
-                    loadedImage.views + ' Views',
+                    this.image.views + ' Views',
                     style: Theme.of(context).textTheme.headline3,
                   ),
                   leading: Icon(Icons.remove_red_eye),
                 ),
                 ListTile(
                   title: Text(
-                    'Taken at ' + loadedImage.date_taken,
+                    'Taken at ' + this.image.date_taken,
                     style: Theme.of(context).textTheme.headline3,
                   ),
                   leading: Icon(Icons.calendar_today),
                 ),
                 ListTile(
                   title: Text(
-                    'Taken By ' + loadedImage.owner,
+                    'Taken By ' + this.image.owner,
                     style: Theme.of(context).textTheme.headline3,
                   ),
                   leading: Icon(Icons.person),

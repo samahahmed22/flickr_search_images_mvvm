@@ -1,11 +1,16 @@
 import 'package:flutter/widgets.dart';
-import 'package:path/path.dart';
 
 import '../models/image_model.dart';
 import '../services/flickr_search_images_web_service.dart';
 import '../services/flickr_search_images_cash_service.dart';
 import '../models/images_list_model.dart';
 import './image_view_model.dart';
+
+enum LoadingStatus {
+  completed,
+  searching,
+  empty,
+}
 
 class ImagesListViewModel extends ChangeNotifier {
   List<ImageViewModel> _images = [];
@@ -19,24 +24,29 @@ class ImagesListViewModel extends ChangeNotifier {
   List<String> _searchHistory;
   ImagesListModel _imagesDataToCash;
   var _allImagesListToCash;
-
-  ImageViewModel getImageById(String id) {
-    return _images.firstWhere((image) => image.id == id);
-  }
+  LoadingStatus loadingStatus = LoadingStatus.completed;
 
   List<ImageViewModel> get imagesList => _images;
 
   String get searchText => _searchText;
 
   Future<void> startSearchingForImages(String imageTitle, int perPage) async {
-    _currentPage = 0;
-    _nextPage = 1;
-    _imagesPerPage = perPage;
-    _searchText = imageTitle;
-    _images = [];
-    _imagesData =
-        await FlickrSearchImagesCashService().loadImagesFromCash((_searchText));
-    await fetchImagesByTitle(_searchText, _imagesPerPage);
+    if (_searchText != imageTitle) {
+      _currentPage = 0;
+      _nextPage = 1;
+      _imagesPerPage = perPage;
+      _searchText = imageTitle;
+      _images = [];
+      _imagesData = await FlickrSearchImagesCashService()
+          .loadImagesFromCash((_searchText));
+      await fetchImagesByTitle(_searchText, _imagesPerPage);
+      if (_images.isEmpty) {
+        this.loadingStatus = LoadingStatus.empty;
+      } else {
+        this.loadingStatus = LoadingStatus.completed;
+      }
+    notifyListeners();
+    }
   }
 
   Future<void> fetchImagesByTitle(String imageTitle, int perPage) async {
@@ -57,7 +67,6 @@ class ImagesListViewModel extends ChangeNotifier {
         _imagesData.imagesList.map((e) => ImageModel.fromJson(e)).toList();
     this._images.addAll(
         _imagesList.map((image) => ImageViewModel(image: image)).toList());
-
     _currentPage = _imagesData.currentPage;
     _totalNumberOfImages = _imagesData.totalNumberOfImages;
     _totalNumberOfPages = _imagesData.totalNumberOfPages;
@@ -67,12 +76,13 @@ class ImagesListViewModel extends ChangeNotifier {
     } else {
       _nextPage = _currentPage + 1;
     }
-    notifyListeners();
   }
 
   Future<void> loadMoreImages() async {
-    await fetchImagesByTitle(_searchText, _imagesPerPage);
-    notifyListeners();
+    if (_nextPage > 1) {
+      await fetchImagesByTitle(_searchText, _imagesPerPage);
+      notifyListeners();
+    }
   }
 
   Future<List<String>> getSearchHistory() async {

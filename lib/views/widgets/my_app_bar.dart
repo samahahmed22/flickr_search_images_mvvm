@@ -29,19 +29,25 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
             Navigator.of(context).pushReplacementNamed('/');
             await userData.logout();
           },
-          icon: ClipOval(
-            child: CachedNetworkImage(
-              imageUrl: userData.user.photoUrl,
-              placeholder: (context, url) => Image.asset('assets/loading.gif'),
-              errorWidget: (context, url, error) => Icon(
-                Icons.error,
-                color: Colors.red[600],
-              ),
+          icon: CachedNetworkImage(
+            imageUrl: userData.user.photoUrl ?? '',
+            imageBuilder: (context, imageProvider) {
+              return Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  image: DecorationImage(
+                    image: imageProvider,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              );
+            },
+            placeholder: (context, url) => Image.asset('assets/loading.gif'),
+            errorWidget: (context, url, error) => Icon(
+              Icons.error,
+              color: Colors.red[600],
             ),
           ),
-          // CircleAvatar(
-          //   backgroundImage: NetworkImage(userData.user.photoURL),
-          // ),
           itemBuilder: (_) => [
             PopupMenuItem(
               child: Text(

@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import '../models/images_list_model.dart';
 
 class FlickrSearchImagesWebService {
-  static final String _apiKey = '044b31928540fe9dd1dd203e2b6c0dab';
+  static final String _apiKey = '329c499a476d5b30c5a4ce36a3db3e1f';
   static final String _baseUrl = 'https://www.flickr.com/services/rest';
   static final String _method = 'flickr.photos.search';
 

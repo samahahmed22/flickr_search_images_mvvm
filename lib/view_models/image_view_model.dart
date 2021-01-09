@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 
 import '../models/image_model.dart';
 
-class ImageViewModel extends ChangeNotifier {
+class ImageViewModel {
   ImageModel _flicker_image;
 
   ImageViewModel({ImageModel image}) : _flicker_image = image;

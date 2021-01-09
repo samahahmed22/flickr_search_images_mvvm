@@ -41,11 +41,7 @@ class LoginService {
           final FacebookAccessToken accessToken = result.accessToken;
           AuthCredential credential =
               FacebookAuthProvider.credential(accessToken.token);
-                       print('********************');
-                       print(credential);
           var authResult = await _firebaseAuth.signInWithCredential(credential);
- 
-              print(authResult.user);
           user = UserModel.fromUser(authResult.user);
           return user;
         } catch (e) {

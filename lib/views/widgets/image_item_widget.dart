@@ -1,26 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 import '../screens/image_details_screen.dart';
 import '../../view_models/image_view_model.dart';
 
-class ImageItem extends StatelessWidget {
+class ImageItemWidget extends StatelessWidget {
+
+  ImageViewModel image;
+  ImageItemWidget(this.image);
+
   @override
   Widget build(BuildContext context) {
-    final image = Provider.of<ImageViewModel>(context, listen: false);
     return ClipRRect(
       // borderRadius: BorderRadius.circular(10),
       child: GridTile(
         child: GestureDetector(
           onTap: () {
-            Navigator.of(context).pushNamed(
-              ImageDetailsScreen.routeName,
-              arguments: image.id,
-            );
+            Navigator.push(context, MaterialPageRoute(builder: (_) {
+              return ImageDetailsScreen(
+                image: this.image,
+              );
+            }));
           },
           child: CachedNetworkImage(
-            imageUrl: image.url,
+            imageUrl: this.image.url ?? '',
             fit: BoxFit.cover,
             placeholder: (context, url) => Image.asset('assets/loading.gif'),
             errorWidget: (context, url, error) => Icon(
@@ -28,11 +31,6 @@ class ImageItem extends StatelessWidget {
               color: Colors.red[600],
             ),
           ),
-          // FadeInImage(
-          //   placeholder: AssetImage('assets/loading.gif'),
-          //   image: NetworkImage(image.url),
-          //   fit: BoxFit.cover,
-          // ),
         ),
       ),
     );

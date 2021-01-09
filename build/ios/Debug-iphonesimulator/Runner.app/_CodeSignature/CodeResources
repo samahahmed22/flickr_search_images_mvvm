@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		LlVtlQjkjlynLGmH5aXGVjywNto=
+		g910/nmvYo0OYXT19FZ4Inv19oc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		HPXNE+o8/fovEDdeTUARkUn9KIs=
+		Y3IxbPShE6uiujJTSvPVm1HCMQU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		8DEyIvARQB3M2tLf4fhBtFA1l5o=
+		N6Jb7Sm9HT/DCNkSdl1O/I/7grs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -698,7 +698,7 @@
 		</data>
 		<key>Frameworks/flutter_login_facebook.framework/flutter_login_facebook</key>
 		<data>
-		SNe/iyLXfnCZq6hUucqNSF4NZyg=
+		b/Y8Pb6SHld7TAj6jHZG4tZPmc0=
 		</data>
 		<key>Frameworks/libswiftAccelerate.dylib</key>
 		<data>
@@ -782,7 +782,7 @@
 		</data>
 		<key>Frameworks/path_provider.framework/path_provider</key>
 		<data>
-		S1LicQYIJQ1sRgfatOlsRgBKYBw=
+		+/aLW866lxjtEBlEjv0ZQAbLiL0=
 		</data>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
 		<data>
@@ -794,7 +794,7 @@
 		</data>
 		<key>Frameworks/shared_preferences.framework/shared_preferences</key>
 		<data>
-		EQtLb4MT+Gtk5AxTOeqkVRhQdtw=
+		dl5UsZFRlbnEX/1+eMvjnfxMnqo=
 		</data>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<data>
@@ -806,7 +806,7 @@
 		</data>
 		<key>Frameworks/sqflite.framework/sqflite</key>
 		<data>
-		3jeEKjDan48Q3uGxaW3s2V4gIVY=
+		bWHJVp0Epq7MfFP+esFrVeekbJw=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -1475,11 +1475,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LlVtlQjkjlynLGmH5aXGVjywNto=
+			g910/nmvYo0OYXT19FZ4Inv19oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ifDl3SBtTpHCDGrqu8odvAkMpR/KZt/UHxRR62rylu4=
+			6G+XQGJFyV8WMOfS3h1Mtx1fFGL2jjWdb+rwAb47jJg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -1497,11 +1497,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HPXNE+o8/fovEDdeTUARkUn9KIs=
+			Y3IxbPShE6uiujJTSvPVm1HCMQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DOyJyKjdO8wpq3AqcNTV2+5ASRFx7wrFSclEumKpRus=
+			KQYzTBNHuGrW2uBvyHgzy5onVAs/aXsXRTDBMgd/Eoo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -1574,11 +1574,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8DEyIvARQB3M2tLf4fhBtFA1l5o=
+			N6Jb7Sm9HT/DCNkSdl1O/I/7grs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GE/eGoBYQFl8BgFFwvuLO6nOx+Nm4DGHqgSWBbTMHQk=
+			vxRulaS4Jvoq3/Ry9pK3e0soH/dqTWNOY370IeZXWlI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -2575,11 +2575,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SNe/iyLXfnCZq6hUucqNSF4NZyg=
+			b/Y8Pb6SHld7TAj6jHZG4tZPmc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5RkjHxZUfjqzmkYiMOLHMwWhMMdX+reNPoO2IzDDAEY=
+			q+a1aMGHXMlui60mRBKHcr0dom5r25qbLgyAU/+5klo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftAccelerate.dylib</key>
@@ -2806,11 +2806,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S1LicQYIJQ1sRgfatOlsRgBKYBw=
+			+/aLW866lxjtEBlEjv0ZQAbLiL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kyDJuA3yqSw0jKSPS+FIRN60z5M8jXE+KnOGKBMeDqo=
+			/a+gBMHM36AAInC7FwzNvY6TC6dn7BU89mS7LHjcSyI=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
@@ -2839,11 +2839,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EQtLb4MT+Gtk5AxTOeqkVRhQdtw=
+			dl5UsZFRlbnEX/1+eMvjnfxMnqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			cmtsMe6MVVKUiajqk/o/7lOpyeoOaB67vdc/0Ru1RpI=
+			0NrJtusiBi+S+XpdEfaVqx21RH2my2P2Sj6jIPl3sfM=
 			</data>
 		</dict>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
@@ -2872,11 +2872,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3jeEKjDan48Q3uGxaW3s2V4gIVY=
+			bWHJVp0Epq7MfFP+esFrVeekbJw=
 			</data>
 			<key>hash2</key>
 			<data>
-			eYuYE8QNYCJBufJ2G6gritXziFiTZb2yrWZ+nU6Twcw=
+			c5ZQ9DpdDhWGgu15JbujIgXOqZhHh1uOWIBkvRhDuM4=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
